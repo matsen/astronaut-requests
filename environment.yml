@@ -1,0 +1,7 @@
+name: requests
+channels:
+  - anaconda
+dependencies:
+  - pip
+  - pip:
+      - requests

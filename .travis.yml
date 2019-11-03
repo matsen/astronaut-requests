@@ -1,0 +1,7 @@
+language: minimal
+
+services:
+  - docker
+
+script:
+  - docker run -v ${PWD}:/astronauts -t quay.io/matsen/astronaut-requests /bin/bash -c "/opt/conda/bin/conda run -n requests python /astronauts/get-astronauts.py"
